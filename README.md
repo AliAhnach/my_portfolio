@@ -29,3 +29,21 @@ Dans GitHub :
 3. Pousser le depot sur la branche `main`
 
 Le chemin de base est configure automatiquement avec le nom du repository GitHub.
+
+## Deploiement Vercel
+
+Le fichier [`vercel.json`](./vercel.json) est configure pour un deploiement depuis la racine du monorepo :
+
+```json
+{
+  "buildCommand": "pnpm build:web",
+  "outputDirectory": "apps/web/dist"
+}
+```
+
+Dans Vercel :
+
+1. Importer le repository a partir de la racine du projet
+2. Laisser `Root Directory` vide, ou le regler sur la racine du monorepo
+3. Verifier que le build utilise bien `pnpm build:web`
+4. Verifier que l'output directory est `apps/web/dist`
