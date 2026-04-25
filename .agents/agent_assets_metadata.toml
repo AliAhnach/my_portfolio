@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "YzxG6fA9kTIleBCkTNYPR"
+uri = "file://artifacts/portfolio/public/hero-bg.png"
+type = "image"
+title = "Abstract technical hero background"
