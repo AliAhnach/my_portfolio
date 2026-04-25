@@ -169,12 +169,6 @@ export default function Home() {
           id="hero"
           className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden flex items-center min-h-[90vh]"
         >
-          {/* Background Image / Pattern */}
-          <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.15]">
-            <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background to-background" />
-            <img src={AROMES_DE_PARIS_IMAGE} alt="" className="w-full h-full object-cover" />
-          </div>
-
           <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid lg:grid-cols-[1fr_auto] items-center gap-12">
               <motion.div

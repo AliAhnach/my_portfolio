@@ -19,7 +19,7 @@ const fr: Dict = {
   "nav.langToggle": "Switch to English",
 
   // hero
-  "hero.badge": "À la recherche d'un stage d'application — Été 2026",
+  "hero.badge": "Étudiant ingénieur en développement logiciel",
   "hero.title": "Étudiant ingénieur en",
   "hero.titleHighlight": "développement logiciel",
   "hero.titleEnd": "et applicatif",
@@ -35,7 +35,7 @@ const fr: Dict = {
   "about.p1":
     "Je suis un étudiant ingénieur rigoureux et motivé, actuellement en première année du cycle ingénieur à l'École Nationale des Sciences Appliquées (ENSA) d'Agadir. Ma formation spécialisée en développement logiciel et applicatif me permet d'acquérir de solides bases techniques et méthodologiques.",
   "about.p2":
-    "Je suis activement à la recherche d'un stage d'application pour l'été 2026 afin de mettre en pratique mes connaissances, d'apprendre au contact de professionnels expérimentés et de contribuer à des projets concrets et stimulants.",
+    "J'aime mettre mes connaissances en pratique, apprendre au contact de professionnels expérimentés et contribuer à des projets concrets et stimulants.",
   "about.contact": "Coordonnées",
   "about.location": "Khénifra, Maroc",
   "about.languages": "Langues",
@@ -116,8 +116,8 @@ const fr: Dict = {
 
   // contact
   "contact.title": "Prêt à collaborer ?",
-  "contact.text.before": "Je suis actuellement à la recherche d'un",
-  "contact.text.highlight": "stage d'application pour l'été 2026",
+  "contact.text.before": "Je suis disponible pour",
+  "contact.text.highlight": "collaborer sur des projets concrets",
   "contact.text.after":
     ". Si mon profil correspond à vos besoins, n'hésitez pas à me contacter.",
   "contact.email": "Envoyer un email",
@@ -126,7 +126,7 @@ const fr: Dict = {
 
   // footer
   "footer.rights": "Tous droits réservés.",
-  "footer.tagline": "Fait avec soin. À la recherche d'un stage pour 2026.",
+  "footer.tagline": "Fait avec soin.",
 };
 
 const en: Dict = {
@@ -144,7 +144,7 @@ const en: Dict = {
   "nav.langToggle": "Passer en français",
 
   // hero
-  "hero.badge": "Looking for an internship — Summer 2026",
+  "hero.badge": "Engineering student in software development",
   "hero.title": "Engineering student in",
   "hero.titleHighlight": "software development",
   "hero.titleEnd": "and applications",
@@ -160,7 +160,7 @@ const en: Dict = {
   "about.p1":
     "I am a rigorous and motivated engineering student, currently in my first year of the engineering cycle at the National School of Applied Sciences (ENSA) Agadir. My specialization in software and applications development gives me solid technical and methodological foundations.",
   "about.p2":
-    "I am actively looking for an application internship for summer 2026 to put my knowledge into practice, learn from experienced professionals and contribute to concrete, stimulating projects.",
+    "I enjoy putting my knowledge into practice, learning from experienced professionals and contributing to concrete, stimulating projects.",
   "about.contact": "Contact",
   "about.location": "Khénifra, Morocco",
   "about.languages": "Languages",
@@ -241,8 +241,8 @@ const en: Dict = {
 
   // contact
   "contact.title": "Ready to collaborate?",
-  "contact.text.before": "I am currently looking for an",
-  "contact.text.highlight": "internship for summer 2026",
+  "contact.text.before": "I am available to",
+  "contact.text.highlight": "collaborate on concrete projects",
   "contact.text.after":
     ". If my profile matches your needs, feel free to reach out.",
   "contact.email": "Send an email",
@@ -251,7 +251,7 @@ const en: Dict = {
 
   // footer
   "footer.rights": "All rights reserved.",
-  "footer.tagline": "Crafted with care. Looking for a 2026 internship.",
+  "footer.tagline": "Crafted with care.",
 };
 
 const dictionaries: Record<Lang, Dict> = { fr, en };

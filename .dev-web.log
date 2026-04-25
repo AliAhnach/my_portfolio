@@ -1,0 +1,21 @@
+
+> ali-ahnach-portfolio@0.0.0 dev C:\Users\HP\Documents\GitHub\my_portfolio
+> pnpm --filter @portfolio/web run dev
+
+
+> @portfolio/web@0.0.0 dev C:\Users\HP\Documents\GitHub\my_portfolio\apps\web
+> vite --config vite.config.ts --host 0.0.0.0
+
+
+  [32m[1mVITE[22m v7.3.2[39m  [2mready in [0m[1m411[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4300[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://169.254.240.229:[1m4300[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://169.254.50.178:[1m4300[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.76.105.70:[1m4300[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.137.1:[1m4300[22m/[39m
+[2m21:47:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/lib/i18n.tsx, /src/index.css[22m
+[2m21:47:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m21:47:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/lib/i18n.tsx[22m Could not Fast Refresh ("useLanguage" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m21:47:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/pages/Home.tsx, /src/components/Navigation.tsx[22m
+[2m21:51:24[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
