@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Ahnach | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio d'Ali Ahnach, etudiant ingenieur logiciel a la recherche d'un stage d'application pour l'ete 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header sticky: logo, navigation, langue, theme et CV -->
+    <header class="site-header">
+      <a class="logo" href="#accueil" aria-label="Accueil">ALi Ahnach</a>
+
+      <button
+        class="menu-toggle icon-btn"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+      >
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a
+          href="#accueil"
+          class="nav-link active"
+          data-page="accueil"
+          data-i18n="nav.home"
+          >Accueil</a
+        >
+        <a
+          href="#apropos"
+          class="nav-link"
+          data-page="apropos"
+          data-i18n="nav.about"
+          >A Propos</a
+        >
+        <a
+          href="#competences"
+          class="nav-link"
+          data-page="competences"
+          data-i18n="nav.skills"
+          >Competences</a
+        >
+        <a
+          href="#projets"
+          class="nav-link"
+          data-page="projets"
+          data-i18n="nav.projects"
+          >Projets</a
+        >
+        <a
+          href="#contact"
+          class="nav-link nav-cta"
+          data-page="contact"
+          data-i18n="nav.contact"
+          >Contact</a
+        >
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="pill-btn lang-toggle"
+          type="button"
+          aria-label="Changer la langue"
+        >
+          <i data-lucide="globe-2"></i>
+          <span>EN</span>
+        </button>
+        <button
+          class="icon-btn theme-toggle"
+          type="button"
+          aria-label="Changer le theme"
+        >
+          <i data-lucide="sun"></i>
+        </button>
+        <a class="pill-btn cv-btn" href="assets/cv_Ali_Ahnach.pdf" download>
+          <i data-lucide="download"></i>
+          <span>CV</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section accueil: photo, statut et presentation courte -->
+      <section class="hero section" id="accueil">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-media">
+              <div class="portrait-wrap" aria-label="Portrait Ali Ahnach">
+                <img
+                  class="portrait"
+                  src="assets/PROFIL.png"
+                  alt="Portrait de Ali Ahnach"
+                />
+              </div>
+
+              <p class="status-pill">
+                <span></span>
+                <strong data-i18n="hero.badge"
+                  >Stage d'application - Ete 2026</strong
+                >
+              </p>
+            </div>
+
+            <div class="hero-text">
+              <h1>
+                <span data-i18n="hero.hello">Bonjour, je suis Ali Ahnach.</span>
+                <span class="muted-line" data-i18n="hero.role"
+                  >Ingenieur Logiciel.</span
+                >
+              </h1>
+
+              <p class="hero-copy" data-i18n="hero.copy">
+                Etudiant Ingenieur en Developpement Logiciel et Applicatif. Je
+                construis des systemes elegants, des interfaces percutantes et
+                des applications pensees pour etre fiables, utiles et agreables
+                a utiliser.
+              </p>
+
+              <div class="hero-highlights" aria-label="Informations principales">
+                <span data-i18n="hero.info1">Developpement web & applicatif</span>
+                <span data-i18n="hero.info2">Architecture logicielle</span>
+                <span data-i18n="hero.info3">UX/UI et interfaces modernes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section a propos: presentation personnelle et langues -->
+      <section class="section about" id="apropos">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-icon"><i data-lucide="user-round"></i></span>
+            <h2 data-i18n="about.title">A propos de moi</h2>
+            <span class="title-line"></span>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p data-i18n="about.copy">
+                Passionne par la conception de solutions logicielles innovantes,
+                je combine une solide base theorique acquise en classes
+                preparatoires avec une pratique intensive des technologies
+                modernes de developpement. Mon objectif est de transformer des
+                problemes complexes en architectures claires et en interfaces
+                performantes.
+              </p>
+
+              <ul class="contact-list" aria-label="Coordonnees">
+                <li>
+                  <i data-lucide="map-pin"></i><span>Khenifra, Maroc</span>
+                </li>
+                <li>
+                  <i data-lucide="mail"></i
+                  ><a href="mailto:aliahnach422@gmail.com"
+                    >aliahnach422@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i data-lucide="phone"></i
+                  ><a href="tel:+212682250928">+212 682 250 928</a>
+                </li>
+              </ul>
+            </div>
+
+            <article class="card languages-card">
+              <h3 data-i18n="about.languages">Langues</h3>
+              <div class="language-row">
+                <div>
+                  <strong data-i18n="lang.arabic">Arabe</strong
+                  ><span data-i18n="lang.native">Langue maternelle</span>
+                </div>
+                <progress max="100" value="100"></progress>
+              </div>
+              <div class="language-row">
+                <div>
+                  <strong data-i18n="lang.french">Francais</strong
+                  ><span data-i18n="lang.good">Bon niveau</span>
+                </div>
+                <progress max="100" value="80"></progress>
+              </div>
+              <div class="language-row">
+                <div>
+                  <strong data-i18n="lang.english">Anglais</strong
+                  ><span data-i18n="lang.medium">Intermediaire</span>
+                </div>
+                <progress max="100" value="60"></progress>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section competences: technologies et qualites humaines -->
+      <section class="section skills" id="competences">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-icon"><i data-lucide="code-2"></i></span>
+            <h2 data-i18n="skills.title">Arsenal Technique</h2>
+            <span class="title-line"></span>
+          </div>
+
+          <div class="skill-grid">
+            <article class="card skill-card featured">
+              <h3 data-i18n="skills.languages">Langages</h3>
+              <ul>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-java-plain colored" aria-hidden="true"></i></span
+                  >Java
+                </li>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-python-plain colored" aria-hidden="true"></i></span
+                  >Python
+                </li>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-c-plain colored" aria-hidden="true"></i></span
+                  >C
+                </li>
+              </ul>
+            </article>
+
+            <article class="card skill-card">
+              <h3>Front-end</h3>
+              <ul>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-javascript-plain colored" aria-hidden="true"></i></span
+                  >JavaScript
+                </li>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-html5-plain colored" aria-hidden="true"></i></span
+                  >HTML5
+                </li>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-css3-plain colored" aria-hidden="true"></i></span
+                  >CSS3
+                </li>
+              </ul>
+            </article>
+
+            <article class="card skill-card">
+              <h3 data-i18n="skills.systems">Systemes & BDD</h3>
+              <ul>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-mysql-plain colored" aria-hidden="true"></i></span
+                  >MySQL
+                </li>
+                <li>
+                  <span class="tech-icon brand-icon"
+                    ><i class="devicon-linux-plain colored" aria-hidden="true"></i></span
+                  >Linux
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="soft-skills">
+            <span data-i18n="soft.team">Travail d'equipe</span>
+            <span data-i18n="soft.org">Organisation</span>
+            <span data-i18n="soft.fast">Apprentissage rapide</span>
+            <span data-i18n="soft.com">Communication</span>
+            <span data-i18n="soft.time">Gestion du temps</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section projets: cartes des realisations principales -->
+      <section class="section projects" id="projets">
+        <div class="container">
+          <div class="section-title">
+            <span class="section-icon"
+              ><i data-lucide="folder-kanban"></i
+            ></span>
+            <h2 data-i18n="projects.title">Projets</h2>
+            <span class="title-line"></span>
+          </div>
+
+          <div class="project-grid">
+            <a
+              class="project-link"
+              href="https://saidala25.github.io/Aromes-de-Paris/index.html"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Ouvrir le projet Aromes de Paris"
+            >
+              <article class="card project-card aromes-de-paris">
+                <div class="project-meta">
+                  <span data-i18n="projects.p1.type">Site web vitrine</span>
+                  <small
+                    ><i data-lucide="users"></i
+                    ><span data-i18n="projects.team5">Equipe de 5</span></small
+                  >
+                </div>
+                <h3>Aromes de Paris</h3>
+                <p data-i18n="projects.p1.copy">
+                  Conception et developpement d'un site vitrine elegant pour un
+                  restaurant-cafe a Agadir. Focus sur l'ambiance visuelle, le
+                  menu et l'experience de reservation.
+                </p>
+                <div class="tags">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                </div>
+              </article>
+            </a>
+
+            <article class="card project-card themed-project chatbot-project">
+              <div class="project-meta">
+                <span data-i18n="projects.p2.type">Projet transversal</span>
+                <small
+                  ><i data-lucide="users"></i
+                  ><span data-i18n="projects.team17">Equipe de 17</span></small
+                >
+              </div>
+              <h3 data-i18n="projects.p2.title">
+                Chatbot de recommandation vestimentaire
+              </h3>
+              <p data-i18n="projects.p2.copy">
+                Participation au departement marketing pour un chatbot base sur
+                la meteo. Analyse des besoins du marche et creation de supports
+                promotionnels.
+              </p>
+              <div class="tags">
+                <span>Marketing</span><span>Analyse</span><span>Design</span>
+              </div>
+            </article>
+
+            <article class="card project-card themed-project ocr-project">
+              <div class="project-meta">
+                <span data-i18n="projects.p3.type">Application Mobile</span>
+                <small
+                  ><i data-lucide="users"></i
+                  ><span data-i18n="projects.team5">Equipe de 5</span></small
+                >
+              </div>
+              <h3 data-i18n="projects.p3.title">
+                Scanner de recus d'achat (OCR)
+              </h3>
+              <p data-i18n="projects.p3.copy">
+                Design d'une solution d'extraction de donnees via OCR. Etude
+                comparative des architectures cloud vs locales avec contraintes
+                de securite.
+              </p>
+              <div class="tags">
+                <span>OCR</span><span>Architecture</span><span>Securite</span>
+              </div>
+            </article>
+
+            <article class="card project-card themed-project student-project">
+              <div class="project-meta">
+                <span data-i18n="projects.p4.type">Application Desktop</span>
+                <small
+                  ><i data-lucide="user"></i
+                  ><span data-i18n="projects.team1">Equipe de 1</span></small
+                >
+              </div>
+              <h3 data-i18n="projects.p4.title">Gestion des etudiants</h3>
+              <p data-i18n="projects.p4.copy">
+                Mini-application robuste de gestion administrative developpee en
+                Java avec des principes orientes objets stricts.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>OOP</span><span>Swing</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section formation et experience -->
+      <section class="section journey" id="formation">
+        <div class="container journey-grid">
+          <div>
+            <div class="section-title compact">
+              <span class="section-icon"
+                ><i data-lucide="graduation-cap"></i
+              ></span>
+              <h2 data-i18n="journey.education">Formation</h2>
+              <span class="title-line"></span>
+            </div>
+            <div class="timeline">
+              <article class="card timeline-card">
+                <time>2025 - Present</time>
+                <h3 data-i18n="journey.e1.title">
+                  Cycle Ingenieur en Genie Logiciel
+                </h3>
+                <strong>ENSA Agadir</strong>
+                <p data-i18n="journey.e1.copy">
+                  Formation d'excellence en ingenierie logicielle, architecture
+                  des systemes et developpement applicatif.
+                </p>
+              </article>
+              <article class="card timeline-card">
+                <time>2023 - 2025</time>
+                <h3 data-i18n="journey.e2.title">
+                  Classes Preparatoires Integrees
+                </h3>
+                <strong>ENSA Agadir</strong>
+                <p data-i18n="journey.e2.copy">
+                  Mathematiques, physique et sciences de l'ingenieur
+                  fondamentales.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-title compact">
+              <span class="section-icon"
+                ><i data-lucide="briefcase-business"></i
+              ></span>
+              <h2 data-i18n="journey.experience">Experience</h2>
+              <span class="title-line"></span>
+            </div>
+            <article class="card timeline-card experience-card">
+              <div class="season-row">
+                <h3 data-i18n="journey.x1.title">Assistant epicerie</h3>
+                <span>Ete</span>
+              </div>
+              <strong data-i18n="journey.x1.role">Emploi saisonnier</strong>
+              <p data-i18n="journey.x1.copy">
+                Service client, organisation des produits et travail en equipe.
+                Developpement de solides competences en communication et gestion
+                du temps dans un environnement dynamique.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section contact: appels a l'action et telechargement du CV -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact-panel">
+            <h2 data-i18n="contact.title">Construisons quelque chose.</h2>
+            <p data-i18n="contact.copy">
+              A la recherche d'un stage en ingenierie logicielle pour l'ete
+              2026. Ma boite mail est toujours ouverte.
+            </p>
+            <div class="contact-actions">
+              <a class="primary-btn" href="mailto:aliahnach422@gmail.com"
+                ><i data-lucide="mail"></i
+                ><span data-i18n="contact.hello">Dire bonjour</span></a
+              >
+              <a
+                class="secondary-btn"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+                ><i data-lucide="linkedin"></i>LinkedIn</a
+              >
+              <a class="secondary-btn" href="assets/cv_Ali_Ahnach.pdf" download
+                ><i data-lucide="download"></i
+                ><span data-i18n="contact.cv">Telecharger CV</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> Ali Ahnach</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
